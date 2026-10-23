@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flygande Korven – start med Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="card">
+      <div class="logo"><img src="assets/flygande-korven-logo.png" width="338" height="149" alt="Flygande Korven"></div>
+      <div class="text">
+        <h1>Flygande Korven i Torslanda</h1>
+        <div class="intro-lines"><p>Varmkorv och tillbehör sedan 1973</p><p>Vi serverar klassisk varmkorv med tydliga val och fasta priser.</p></div>
+      </div>
+    </header>
+    <aside class="card side-menu" aria-labelledby="extra-rubrik">
+      <h2 id="extra-rubrik">Extra</h2>
+      <ul><li>Extra bröd – 5 kr</li><li>Potatismos – 20 kr</li><li>Räksallad – 15 kr</li><li>Rostad lök – 5 kr</li></ul>
+    </aside>
+    <main class="card">
+      <article class="dish-card">
+        <img src="assets/djur/taxkorv.jpg" alt="Korv formad som en tax med öron av bröd">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Taxkorven</h3><p class="dish-price">45 kr</p></div>
+          <p class="dish-description">Lång och trogen, med senap längs ryggen.</p>
+        </div>
+      </article>
+      <article class="dish-card featured">
+        <img src="assets/djur/drakkorv.jpg" alt="Tre korvar formade som en drake med vingar av bacon">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h3 class="dish-name">Drakkorven</h3><span class="premium">Premium</span></div>
+            <p class="dish-price">95 kr</p>
+          </div>
+          <p class="dish-description">Tre korvar, vingar av krispig bacon och eld av rökt paprika.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/pingvinkorv.jpg" alt="Korv klädd som pingvin i nori och färskost">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Pingvinkorven</h3><p class="dish-price">49 kr</p></div>
+          <p class="dish-description">Glider på magen genom brödet, i nori och färskost.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/algkorv.jpg" alt="Korv formad som en älg med horn av saltkringlor">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Älgkorven</h3><p class="dish-price">52 kr</p></div>
+          <p class="dish-description">Horn av saltkringlor och lingonsylt. Skogens kung.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/bikorv.jpg" alt="Korv randig som ett bi med vingar av lök">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Bikorven</h3><p class="dish-price">42 kr</p></div>
+          <p class="dish-description">Ränder av senap och oliver, en skvätt honung.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/blackfiskkorv.jpg" alt="Korv skuren som en bläckfisk med åtta armar">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Bläckfiskkorven</h3><p class="dish-price">48 kr</p></div>
+          <p class="dish-description">Åtta armar som simmar i ketchup.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/lejonkorv.jpg" alt="Korv med en lejonman av rostad lök">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Lejonkorven</h3><p class="dish-price">55 kr</p></div>
+          <p class="dish-description">Man av rostad lök och morrhår av senap.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/grodkorv.jpg" alt="Korv som en groda med ögon av mozzarella">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Grodkorven</h3><p class="dish-price">44 kr</p></div>
+          <p class="dish-description">Pesto, gurka och mozzarellaögon. Kvack.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/djur/nyckelpigekorv.jpg" alt="Korv med körsbärstomater och prickar av svarta oliver">
+        <div class="dish-copy">
+          <div class="dish-heading"><h3 class="dish-name">Nyckelpigekorven</h3><p class="dish-price">46 kr</p></div>
+          <p class="dish-description">Körsbärstomater med prickar av svarta oliver.</p>
+        </div>
+      </article>
+    </main>
+    <aside class="card side-menu" aria-labelledby="dryck-rubrik">
+      <h2 id="dryck-rubrik">Dryck</h2>
+      <ul><li>Vatten – 15 kr</li><li>Pucko – 25 kr</li><li>Kaffe – 20 kr</li><li>Festis – 15 kr</li></ul>
+    </aside>
+    <footer class="card">
+      <div class="footer-copy">
+        <h2>Öppet</h2>
+        <ul><li>mån–fre 10–22</li><li>lör 12–24</li><li>sön 12–20</li></ul>
+      </div>
+      <div class="logo"><img src="assets/flygande-korven-logo.png" width="338" height="149" alt=""></div>
+      <div class="footer-copy">
+        <h2>Kontakt</h2>
+        <ul><li>Korvvägen 1</li><li>Torslanda</li><li><a href="tel:031987654">Ring: 031-987 654</a></li></ul>
+      </div>
+    </footer>
+  </div>
+
+<div class="menu-wrapper">
+  <header class="card menu-header">
+    <div class="logo"><img src="assets/flygande-korven-logo.png" width="338" height="149" alt="Flygande Korven"></div>
+    <div class="text">
+      <h1>Flygande Korven i Torslanda</h1>
+      <div class="intro-lines"><p>Varmkorv och tillbehör sedan 1973</p><p>Vi serverar klassisk varmkorv med tydliga val och fasta priser.</p></div>
+    </div>
+  </header>
+  <!-- Nästa steg: flytta upp de tre panelerna och ta bort denna wrapper. -->
+  <div class="menu-middle">
+  <aside class="card side-menu" aria-labelledby="extra-heading">
+    <h2 id="extra-heading">Extra</h2>
+    <ul><li>Extra bröd – 5 kr</li><li>Potatismos – 20 kr</li><li>Räksallad – 15 kr</li><li>Rostad lök – 5 kr</li></ul>
+  </aside>
+  <main class="card main-menu" aria-label="Korvmeny">
+    <div class="dish-grid">
+      <article class="dish-card">
+        <img src="assets/kokt.jpg" width="1536" height="1024" alt="Kokt korv i bröd med senap">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Kokt</h2></div>
+            <p class="dish-price">30 kr</p>
+          </div>
+          <p class="dish-description">Klassisk varmkorv med bröd och senap.</p>
+        </div>
+      </article>
+      <article class="dish-card featured">
+        <img src="assets/igelkotten.jpg" width="1536" height="1024" alt="Potatismos med grillade korvbitar som piggar">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Igelkotten</h2><span class="premium">Premium</span></div>
+            <p class="dish-price">85 kr</p>
+          </div>
+          <p class="dish-description">En rejäl hög potatismos med korvar som piggar.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/ostbacon.jpg" width="1536" height="1024" alt="Korv i bröd med ost och bacon">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Ost- och baconkorv</h2></div>
+            <p class="dish-price">55 kr</p>
+          </div>
+          <p class="dish-description">Klassisk varmkorv med bröd och senap.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/grillad.jpg" width="1536" height="1024" alt="Grillad korv i bröd med ketchup och senap">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Grillad</h2></div>
+            <p class="dish-price">35 kr</p>
+          </div>
+          <p class="dish-description">Grillad korv med bröd, ketchup och senap.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/bratwurst.jpg" width="1536" height="1024" alt="Bratwurst i bröd med senap och surkål">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Bratwurst</h2></div>
+            <p class="dish-price">50 kr</p>
+          </div>
+          <p class="dish-description">Bratwurst med bröd, senap och surkål.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/trippelkorv.jpg" width="1536" height="1024" alt="Tre korvar i ett bröd med ketchup och senap">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Trippelkorv</h2></div>
+            <p class="dish-price">65 kr</p>
+          </div>
+          <p class="dish-description">Tre grillade korvar i ett bröd med ketchup och senap</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/bratwurst.jpg" width="1536" height="1024" alt="Korv i bröd med senap, samma referensbild som Bratwurst">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Chorizo</h2></div>
+            <p class="dish-price">50 kr</p>
+          </div>
+          <p class="dish-description">Kryddig chorizo med bröd, senap och picklad rödlök.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/vegokorv.jpg" width="1536" height="1024" alt="Vegokorv i bröd med gurkmajonnäs">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Vegokorv</h2></div>
+            <p class="dish-price">40 kr</p>
+          </div>
+          <p class="dish-description">Vegetarisk korv med bröd och gurkmajonnäs.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <img src="assets/halvspecial.jpg" width="1536" height="1024" alt="Korv i bröd med mos och räksallad">
+        <div class="dish-copy">
+          <div class="dish-heading">
+            <div class="dish-label"><h2 class="dish-name">Halvspecial</h2></div>
+            <p class="dish-price">65 kr</p>
+          </div>
+          <p class="dish-description">Korv i bröd med mos och räksallad.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <aside class="card side-menu" aria-labelledby="drink-heading">
+    <h2 id="drink-heading">Dryck</h2>
+    <ul><li>Vatten – 15 kr</li><li>Pucko – 25 kr</li><li>Kaffe – 20 kr</li><li>Festis – 15 kr</li></ul>
+  </aside>
+  </div>
+  <footer class="card menu-footer">
+    <div class="footer-copy">
+      <h2>Öppet</h2>
+      <ul><li>mån–fre 10–22</li><li>lör 12–24</li><li>sön 12–20</li></ul>
+    </div>
+    <div class="logo"><img src="assets/flygande-korven-logo.png" width="338" height="149" alt="Flygande Korven"></div>
+    <div class="footer-copy contact">
+      <div class="contact-content">
+      <h2>Kontakt</h2>
+      <ul><li>Korvvägen 1</li><li>Torslanda</li><li><a href="tel:031987654">Ring: 031-987 654</a></li></ul>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
